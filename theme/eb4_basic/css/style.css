@@ -274,30 +274,32 @@
 }
 
 /*---------- Footer ----------*/
-.footer {position:relative;border-top:1px solid rgba(0,0,0,0.15)}
-.footer-top {margin-bottom:30px;padding:30px 0;border-bottom:1px solid rgba(0,0,0,0.15)}
-.footer-top:after {content:"";display:block;clear:both}
-.footer-nav {width:50%;float:left}
-.footer-nav a {color:#353535;font-size:.9375rem;margin-right:10px}
-.footer-nav a:hover {text-decoration:underline}
-.footer-right-nav {position:relative;width:50%;float:right;text-align:right}
-.footer-right-nav a {color:#353535;font-size:.9375rem;margin-right:10px}
-.footer-right-nav a:hover {text-decoration:underline}
-.footer-cont-info {position:relative;font-size:.9375rem;margin-top:30px;word-break:keep-all;text-align:center;line-height:1.6}
-.footer-cont-info strong {color:#353535}
-.footer-cont-info span {color:#757575}
-.footer-cont-info span.info-divider {margin-left:5px;margin-right:5px;color:#d5d5d5}
-.footer-cont-info a {color:#555555;text-decoration:underline}
-.footer-cont-info a:hover {color:#353535}
-.footer-copyright {color:#656565;font-size:.8125rem;text-align:center;padding:30px 0}
-@media (max-width:991px) {
-    .footer-nav {width:100%;text-align:center}
-    .footer-right-nav {width:100%;text-align:center;margin-top:10px}
+.footer {background-color: #17191E;color: #ffffff;padding: 20px;}
+.footer-top {display: flex;justify-content: space-between;align-items: center;padding: 0 20px;margin-bottom: 40px;}
+.footer-logo{width: 54px;height: 28px;margin: 0;}
+.footer-logo img {width: 100%;height: auto; /* Maintains the aspect ratio */}
+.footer-links {display: flex;gap: 20px;}
+.footer-links a {color: #ffffff;text-decoration: none;font-size: 14px;}
+.footer-links a:hover {text-decoration: underline;}
+.footer-bottom {padding: 0 20px;text-align: left;}
+.footer-bottom p {margin: 5px 0;font-size: 14px;line-height: 1.5;}
+.footer-policy-links {margin-top: 20px;}
+.footer-policy-links a {color: #ffffff;text-decoration: none;font-size: 14px;margin-right: 15px; /* Adds space between links */}
+.footer-policy-links a:hover {text-decoration: underline;}
+.footer-muted-text{color: #9DA6BB;}
+.footer-address-text{margin-top: 15px !important;}
+.footer-copyright-text{margin-top: 17px !important;}
+.footer-container {padding-left: 80px;padding-right: 80px;margin: 0 auto;max-width: 1200px;}
+@media (max-width: 768px) {
+    .footer {padding: 2px;}
+    .footer-top {flex-direction: column;align-items: flex-start;}
+    .footer-container {padding-left: 0px;padding-right: 0px;}
+    .footer-logo {margin-bottom: 20px;}
+    .footer-links {display: flex;flex-direction: column;gap: 5px;margin-top: 20px;}
+    .footer-policy-links {margin-bottom: 20px;}
+    .footer-logo,
+    .footer-links{margin-bottom: 0;}
 }
-@media (max-width:767px) {
-	.footer-copyright span {display:none}
-}
-
 /*---------- Search Full ----------*/
 .search-full {position:fixed;top:0;bottom:0;left:0;right:0;background:rgba(0, 0, 0, 0.9);display:none;z-index:1010}
 .search-full .search-field {position:absolute;top:50%;left:0;right:0;transform:translateY(-50%)}
